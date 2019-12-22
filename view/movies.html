@@ -1,0 +1,26 @@
+<div>
+    <h1>电影</h1>
+    <a class="nav" href="/">首页</a>
+</div>
+<ul style="overflow: hidden;">
+    <% movies.forEach(function (item) {%>
+
+    <li class="news" style="height: 200px;">
+        <div class="img_box">
+            <a href="<%= item.sourceUrl %>" target="_blank">
+                <img style="height: 100%" src="<%= item.imgUrl %>">
+            </a>
+        </div>
+        <div class="info_box">
+            <a href="<%= item.sourceUrl %>" target="_blank">
+                <h4>
+                    <font color="1C1CFF"><%= item.title %></font>
+                </h4>
+            </a>
+            <span class="vg_tab"><%= item.subtitle %></span>
+        </div>
+        </div>
+    </li>
+
+    <% })%>
+</ul>

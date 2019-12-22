@@ -1,0 +1,23 @@
+<a class="nav" href="/">首页</a>
+<ul style="overflow: hidden;">
+    <% body.forEach(function (item) {%>
+
+    <li class="news">
+        <div class="img_box">
+            <a href="<%= item.defaultUrl %>" target="_blank">
+                <img src="<%= item.imgUrl %>" align="left" style="width:100px;">
+            </a>
+        </div>
+        <div class="info_box">
+            <a href="<%= item.defaultUrl %>" target="_blank">
+                <h4>
+                    <font color="1C1CFF"><%= item.name %></font>
+                </h4>
+            </a>
+            <span class="vg_tab">今日数量 <%= item.currentNum %></span>
+        </div>
+        </div>
+    </li>
+
+    <% })%>
+</ul>
