@@ -40,9 +40,34 @@ p{word-wrap:break-word}
     padding: 20px;
 }
 .nav{
+    float: right;
     margin: 20px;
     font-size: 30px;
 }
 .info_box font{
     font-size: 13px;
 }
+.items{
+    width: 600px;
+    margin-left: 20px;
+    box-shadow: 0 3px 3px #eaedef;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.i-info{
+    float: left;
+    width: 455px;
+    /* min-height: 70px; */
+    border-right: 1px solid #ebebeb
+}
+.i-user{
+    float: left;
+    width: 144px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+

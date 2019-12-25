@@ -5,7 +5,6 @@ const dayjs = require('dayjs')
 
 function getSteamHotGameList() {
     return async (ctx, next) => {
-        // console.log(await getHTMLContext('https://store.steampowered.com/search/?os=win&filter=topsellers'))
         if (ctx.req.url === '/steam') {
             let body = await getHTMLContext('https://store.steampowered.com/search/?os=win&filter=topsellers')
             body = await set(body)
