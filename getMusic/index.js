@@ -18,6 +18,7 @@ function getFunction() {
 let set = async (body) => {
     let $ = cheerio.load(body)
     let listItem = $('.items')
+    console.log('哈哈哈哈哈', listItem);
     let baseUrl = 'https://www.sq688.com'
     let resultArray = []
     for (let i = 0, len = listItem.length; i < len; i++) {

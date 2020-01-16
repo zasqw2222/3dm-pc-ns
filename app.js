@@ -15,6 +15,7 @@ const getHome = require('./getHome')
 const getMovies = require('./movies')
 const getSteamHotGameList = require('./getSteam')
 const getMusic = require('./getMusic')
+const getMusic_ = require('./getMusic_')
 const wii = require('./91wii')
 const api = require('./api')
 
@@ -42,6 +43,7 @@ app.use(getSteamHotGameList())
 
 app.use(getMusic())
 
+app.use(getMusic_())
 app.use(api())
 
 app.listen(3000, () => {
