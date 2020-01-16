@@ -1,0 +1,24 @@
+<div>
+    <h1>网友上传</h1>
+    <a class="nav" href="/">首页</a>
+</div>
+<ul class="music" style="overflow: hidden;">
+    <% body.forEach(function (item) {%>
+
+    <div class="items">
+        <div class="i-info">
+            <img src="<%= item.imgUrl %>" />
+            <!-- <a href="<%= item.defaultURL %>">
+                <h3><%= item.name %></h3>
+                <p class="i-date"><i class="fa fa-calculator"></i>
+                    <%= item.date %>
+                </p>
+            </a> -->
+        </div>
+        <div class="i-user">
+            <!-- <a class="baiduURI" data-url="<%= item.defaultURL %>">获取链接</a> -->
+        </div>
+    </div>
+
+    <% })%>
+</ul>
